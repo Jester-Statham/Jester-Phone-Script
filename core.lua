@@ -47,13 +47,6 @@ Core.SoundNames = {
 	},
 }
 
-Core.Models = {
-	{ Name = "Jester Mini",   Size = UDim2.fromOffset(215, 385), Radius = 24, Notch = UDim2.fromOffset(64, 16) },
-	{ Name = "Jester One",    Size = UDim2.fromOffset(250, 445), Radius = 30, Notch = UDim2.fromOffset(78, 18) },
-	{ Name = "Jester Pro",    Size = UDim2.fromOffset(268, 485), Radius = 36, Notch = UDim2.fromOffset(96, 20) },
-	{ Name = "Jester Ultra",  Size = UDim2.fromOffset(290, 525), Radius = 42, Notch = UDim2.fromOffset(120, 24) },
-}
-
 function Core.new()
 	local self = setmetatable({}, Core)
 	self.Sound = {
