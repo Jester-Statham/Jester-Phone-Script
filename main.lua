@@ -1,5 +1,5 @@
 -- main.lua — JESTER PHONE v2.10 (Stable Loader)
-print("[Jester Phone] Запуск загрузчика...")
+print("[Jester Phone] Запуск загрузчика vnoll...")
 
 local function loadModule(name, url)
     print("[Jester Loader] Загружаю: " .. name)
@@ -39,16 +39,10 @@ end
 local BASE_URL = "https://raw.githubusercontent.com/Jester-Statham/Jester-Phone-Script/refs/heads/main/"
 
 local URLS = {
-    core      = BASE_URL .. "NEW_core.lua",
-    widgets   = BASE_URL .. "NEW_widgets.lua",
-    settings  = BASE_URL .. "NEW_settings.lua",
-    logs      = BASE_URL .. "NEW_logs.lua",
+    core      = BASE_URL .. "core.lua",
+    widgets   = BASE_URL .. "widgets.lua",
+    settings  = BASE_URL .. "settings.lua",
    
-    explorer  = BASE_URL .. "Explorer.lua",
-    movement  = BASE_URL .. "Movement.lua",
-    autofarm  = BASE_URL .. "AutoTycoon.lua",
-    injector  = BASE_URL .. "Injector_1.2.lua",
-    superman  = BASE_URL .. "SuperMan_App.lua",
 }
 
 -- ═══════════════════════════════════════════════════════
@@ -75,12 +69,6 @@ end
 -- Регистрация приложений
 local appsToLoad = {
     { name = "Settings",  url = URLS.settings },
-    { name = "Logs",      url = URLS.logs },
-    { name = "Explorer",  url = URLS.explorer },
-    { name = "Movement",  url = URLS.movement },
-    { name = "AutoTycoon", url = URLS.autofarm },
-    { name = "Injector",  url = URLS.injector },
-    { name = "SuperMan",  url = URLS.superman },
 }
 
 for _, appInfo in ipairs(appsToLoad) do
